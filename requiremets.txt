@@ -1,0 +1,10 @@
+requests
+beautifulsoup4
+pandas
+flask
+sqlalchemy
+python-dotenv
+loguru
+retrying
+webdriver-manager
+selenium
