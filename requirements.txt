@@ -1,0 +1,16 @@
+# requests
+# beautifulsoup4
+# pandas
+# flask
+# sqlalchemy
+# python-dotenv
+# loguru
+# retrying
+# webdriver-manager
+# selenium
+
+requests
+beautifulsoup4
+pandas
+loguru
+flask

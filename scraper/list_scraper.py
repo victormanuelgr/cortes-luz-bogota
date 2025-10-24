@@ -1,55 +1,83 @@
-# scraper/list_scraper.py
-from bs4 import BeautifulSoup
+"""
+list_scraper.py
+---------------
+Extrae el listado de artículos sobre cortes de luz desde
+https://bogota.gov.co/tag/cortes-de-luz-en-bogota
+"""
+
 import pandas as pd # type: ignore
-from urllib.parse import urljoin
-from scraper.utils import get, random_sleep, logger
-import os
+from bs4 import BeautifulSoup
+from loguru import logger
+from .utils import get, random_sleep
 
-BASE = os.getenv("BASE_URL", "https://bogota.gov.co/tag/cortes-de-luz-en-bogota")
+def parse_article(article_tag):
+    """
+    Extrae título, enlace y fecha de un artículo del listado principal.
 
-def parse_list_page(html, base_url="https://bogota.gov.co"):
-    soup = BeautifulSoup(html, "html.parser")
-    # SELECTOR a validar en DevTools:
-    # intento con contenedores de artículo tipo Drupal: div.node--type-article
-    article_nodes = soup.select("div.node--type-article")
-    results = []
-    for node in article_nodes:
-        # título y link
-        a = node.select_one("h2 a")
-        title = a.get_text(strip=True) if a else None
-        link = a["href"] if a and a.has_attr("href") else None
-        if link and link.startswith("/"):
-            link = urljoin(base_url, link)
-        # fecha (tiempo)
-        time_el = node.select_one("time")
-        pubdate = time_el.get_text(strip=True) if time_el else None
-        results.append({"title": title, "link": link, "pubdate": pubdate})
+    Args:
+        article_tag (bs4.element.Tag): bloque HTML de un artículo.
+
+    Returns:
+        dict: datos limpios con 'title', 'link', 'pubdate'.
+    """
+    try:
+        title = article_tag.select_one("h2 a").get_text(strip=True)
+    except:
+        title = None
+
+    try:
+        link = article_tag.select_one("h2 a")["href"]
+        if link.startswith("/"):
+            link = "https://bogota.gov.co" + link
+    except:
+        link = None
+
+    try:
+        pubdate = article_tag.select_one("time").get_text(strip=True)
+    except: 
+        pubdate = None
+
+    return {"title": title, "link": link, "pubdate": pubdate}
+
+def scrape_page(page_url):
+    """
+    Descarga y analiza una página del listado.
+
+    Args:
+        page_url (str): URL de la página.
+
+    Returns:
+        list[dict]: Lista de artículos encontrados.
+    """
+    logger.info(f"Scrapeando página: {page_url}")
+    resp = get(page_url)
+    soup = BeautifulSoup(resp.text, "html.parser")
+    article_tags = soup.select("div.node--type-article")
+
+    results = [parse_article(a) for a in article_tags]
+    random_sleep(0.5, 1.0)
     return results
 
-def scrape_list_pages(pages=5):
-    all_items = []
-    for p in range(1, pages + 1):
-        if p == 1:
-            url = BASE
-        else:
-            url = f"{BASE}/page/{p}"
-        logger.info(f"Scraping listado: {url}")
+def run():
+    """Ejecuta el scraper del listado completo."""
+    base_url = "https://bogota.gov.co/tag/cortes-de-luz-en-bogota"
+    all_results = []
+
+    for page in range(1, 6):  # cambia si hay más páginas
+        url = base_url if page == 1 else f"{base_url}/page/{page}"
         try:
-            resp = get(url)
-            items = parse_list_page(resp.text)
-            if not items:
-                logger.info("No se encontraron items en la página, interrumpiendo paginación.")
+            results = scrape_page(url)
+            if not results:
                 break
-            all_items.extend(items)
-            random_sleep(0.5, 1.2)
+            all_results.extend(results)
         except Exception as e:
-            logger.error(f"Error scrappeando {url}: {e}")
+            logger.error(f"Error procesando {url}: {e}")
             break
-    df = pd.DataFrame(all_items).drop_duplicates(subset=["link"])
-    out = os.path.join(os.getenv("DATA_DIR", "./data"), "cortes_bogota_listado.csv")
-    df.to_csv(out, index=False, encoding="utf-8")
-    logger.info(f"Guardado listado: {out} ({len(df)} registros)")
-    return df
+
+    df = pd.DataFrame(all_results)
+    df.to_csv("data/cortes_bogota_listado.csv", index=False, encoding="utf-8")
+    logger.success(f"Listado guardado con {len(df)} artículos.")
 
 if __name__ == "__main__":
-    scrape_list_pages(pages=6)
+    logger.add("logs/list_scraper_{time}.log", rotation="1 MB")
+    run()
