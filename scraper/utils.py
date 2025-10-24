@@ -3,7 +3,7 @@ import os
 import time
 import random
 import requests
-from retrying import retry
+from retrying import retry #type: ignore
 from loguru import logger
 from dotenv import load_dotenv
 
