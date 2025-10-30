@@ -1,0 +1,7 @@
+2025-10-27 19:26:15.206 | INFO     | __main__:<module>:36 - Iniciando extracción de detalles...
+2025-10-27 19:26:15.223 | INFO     | __main__:<module>:43 - Extrayendo datos de https://bogota.gov.co/que-hacer/cultura/noche-de-museos-2025-activa-la-programacion-en-diez-espacios-de-bogota
+2025-10-27 19:26:26.183 | INFO     | __main__:<module>:43 - Extrayendo datos de https://bogota.gov.co/servicios/cortes-de-luz-en-bogota-y-cota-para-este-viernes-4-de-julio-de-2025
+2025-10-27 19:26:37.303 | INFO     | __main__:<module>:43 - Extrayendo datos de https://bogota.gov.co/mi-ciudad/participacion-y-cultura-ciudadana/asi-funciona-la-plataforma-de-datos-abiertos-bogota-2025
+2025-10-27 19:26:48.265 | INFO     | __main__:<module>:43 - Extrayendo datos de https://bogota.gov.co/mi-ciudad/movilidad/en-vivo-movilidad-bogota-y-rutas-transmilenio-lunes-27-de-octubre-2025
+2025-10-27 19:26:59.080 | INFO     | __main__:<module>:43 - Extrayendo datos de https://bogota.gov.co/internacional/oferta-internacional-en-bogota-de-27-de-octubre-al-1-de-noviembre-2025
+2025-10-27 19:27:10.387 | INFO     | __main__:<module>:49 - Datos guardados en data/cortes_bogota_detailed.csv

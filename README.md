@@ -1,15 +1,9 @@
-# Cortes de Luz Bogotá
+# Cortes de Agua Bogotá – Scraper
 
-Automatiza la recolección de los comunicados oficiales sobre cortes de luz en Bogotá desde la web de la Alcaldía.
+Proyecto para automatizar la extracción de datos sobre cortes de agua en Bogotá desde el portal oficial [bogota.gov.co](https://bogota.gov.co/tag/cortes-de-agua-en-bogota).
 
-## Estructura del Proyecto
-- **scraper/** → scripts de scraping y procesamiento
-- **api/** → API Flask para exponer los resultados
-- **data/** → resultados en CSV
-- **logs/** → registros de ejecución
-- **.vscode/** → configuración para VS Code
-
-## Ejecución
-1. Instala dependencias:
+## Instalación
+1. Crear entorno virtual:
    ```bash
-   pip install -r requirements.txt
+   python -m venv venv
+   .\venv\Scripts\activate

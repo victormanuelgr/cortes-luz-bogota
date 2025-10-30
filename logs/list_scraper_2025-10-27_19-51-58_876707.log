@@ -1,0 +1,4 @@
+2025-10-27 19:51:58.877 | INFO     | __main__:<module>:49 - Buscando artículos de cortes de agua en bogota.gov.co...
+2025-10-27 19:52:10.498 | ERROR    | __main__:get_article_links:41 - Error al obtener los enlaces: Message: 
+
+2025-10-27 19:52:12.789 | WARNING  | __main__:<module>:59 - ⚠️ No se encontraron artículos sobre cortes de agua.

@@ -1,5 +1,4 @@
+# scraper/__init__.py
 """
-scraper package
----------------
-Módulo de scraping para obtener los comunicados de cortes de luz en Bogotá.
+Inicializador del módulo scraper.
 """

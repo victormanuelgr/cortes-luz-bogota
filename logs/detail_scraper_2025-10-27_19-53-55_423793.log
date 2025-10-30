@@ -1,0 +1,132 @@
+2025-10-27 19:53:55.424 | INFO     | __main__:<module>:68 - Iniciando extracción de detalles de cortes de agua...
+2025-10-27 19:53:55.427 | INFO     | __main__:<module>:77 - Extrayendo datos de https://bogota.gov.co/que-hacer/cultura/noche-de-museos-2025-activa-la-programacion-en-diez-espacios-de-bogota
+2025-10-27 19:54:07.136 | ERROR    | __main__:get_details:60 - Error procesando https://bogota.gov.co/que-hacer/cultura/noche-de-museos-2025-activa-la-programacion-en-diez-espacios-de-bogota: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66ce9e8e5+80021]
+	GetHandleVerifier [0x0x7ff66ce9e940+80112]
+	(No symbol) [0x0x7ff66cc2060f]
+	(No symbol) [0x0x7ff66cc78854]
+	(No symbol) [0x0x7ff66cc78b1c]
+	(No symbol) [0x0x7ff66cccc927]
+	(No symbol) [0x0x7ff66cca126f]
+	(No symbol) [0x0x7ff66ccc968a]
+	(No symbol) [0x0x7ff66cca1003]
+	(No symbol) [0x0x7ff66cc695d1]
+	(No symbol) [0x0x7ff66cc6a3f3]
+	GetHandleVerifier [0x0x7ff66d15dc7d+2960429]
+	GetHandleVerifier [0x0x7ff66d157f3a+2936554]
+	GetHandleVerifier [0x0x7ff66d178977+3070247]
+	GetHandleVerifier [0x0x7ff66ceb83ce+185214]
+	GetHandleVerifier [0x0x7ff66cebfe1f+216527]
+	GetHandleVerifier [0x0x7ff66cea7b24+117460]
+	GetHandleVerifier [0x0x7ff66cea7cdf+117903]
+	GetHandleVerifier [0x0x7ff66ce8dbb8+11112]
+	BaseThreadInitThunk [0x0x7fff2d4ce8d7+23]
+	RtlUserThreadStart [0x0x7fff2e568d9c+44]
+
+2025-10-27 19:54:09.407 | WARNING  | __main__:<module>:82 - No se encontró información en https://bogota.gov.co/que-hacer/cultura/noche-de-museos-2025-activa-la-programacion-en-diez-espacios-de-bogota
+2025-10-27 19:54:09.408 | INFO     | __main__:<module>:77 - Extrayendo datos de https://bogota.gov.co/servicios/cortes-de-luz-en-bogota-y-cota-para-este-viernes-4-de-julio-de-2025
+2025-10-27 19:54:21.086 | ERROR    | __main__:get_details:60 - Error procesando https://bogota.gov.co/servicios/cortes-de-luz-en-bogota-y-cota-para-este-viernes-4-de-julio-de-2025: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66ce9e8e5+80021]
+	GetHandleVerifier [0x0x7ff66ce9e940+80112]
+	(No symbol) [0x0x7ff66cc2060f]
+	(No symbol) [0x0x7ff66cc78854]
+	(No symbol) [0x0x7ff66cc78b1c]
+	(No symbol) [0x0x7ff66cccc927]
+	(No symbol) [0x0x7ff66cca126f]
+	(No symbol) [0x0x7ff66ccc968a]
+	(No symbol) [0x0x7ff66cca1003]
+	(No symbol) [0x0x7ff66cc695d1]
+	(No symbol) [0x0x7ff66cc6a3f3]
+	GetHandleVerifier [0x0x7ff66d15dc7d+2960429]
+	GetHandleVerifier [0x0x7ff66d157f3a+2936554]
+	GetHandleVerifier [0x0x7ff66d178977+3070247]
+	GetHandleVerifier [0x0x7ff66ceb83ce+185214]
+	GetHandleVerifier [0x0x7ff66cebfe1f+216527]
+	GetHandleVerifier [0x0x7ff66cea7b24+117460]
+	GetHandleVerifier [0x0x7ff66cea7cdf+117903]
+	GetHandleVerifier [0x0x7ff66ce8dbb8+11112]
+	BaseThreadInitThunk [0x0x7fff2d4ce8d7+23]
+	RtlUserThreadStart [0x0x7fff2e568d9c+44]
+
+2025-10-27 19:54:23.319 | WARNING  | __main__:<module>:82 - No se encontró información en https://bogota.gov.co/servicios/cortes-de-luz-en-bogota-y-cota-para-este-viernes-4-de-julio-de-2025
+2025-10-27 19:54:23.320 | INFO     | __main__:<module>:77 - Extrayendo datos de https://bogota.gov.co/mi-ciudad/participacion-y-cultura-ciudadana/asi-funciona-la-plataforma-de-datos-abiertos-bogota-2025
+2025-10-27 19:54:35.008 | ERROR    | __main__:get_details:60 - Error procesando https://bogota.gov.co/mi-ciudad/participacion-y-cultura-ciudadana/asi-funciona-la-plataforma-de-datos-abiertos-bogota-2025: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66ce9e8e5+80021]
+	GetHandleVerifier [0x0x7ff66ce9e940+80112]
+	(No symbol) [0x0x7ff66cc2060f]
+	(No symbol) [0x0x7ff66cc78854]
+	(No symbol) [0x0x7ff66cc78b1c]
+	(No symbol) [0x0x7ff66cccc927]
+	(No symbol) [0x0x7ff66cca126f]
+	(No symbol) [0x0x7ff66ccc968a]
+	(No symbol) [0x0x7ff66cca1003]
+	(No symbol) [0x0x7ff66cc695d1]
+	(No symbol) [0x0x7ff66cc6a3f3]
+	GetHandleVerifier [0x0x7ff66d15dc7d+2960429]
+	GetHandleVerifier [0x0x7ff66d157f3a+2936554]
+	GetHandleVerifier [0x0x7ff66d178977+3070247]
+	GetHandleVerifier [0x0x7ff66ceb83ce+185214]
+	GetHandleVerifier [0x0x7ff66cebfe1f+216527]
+	GetHandleVerifier [0x0x7ff66cea7b24+117460]
+	GetHandleVerifier [0x0x7ff66cea7cdf+117903]
+	GetHandleVerifier [0x0x7ff66ce8dbb8+11112]
+	BaseThreadInitThunk [0x0x7fff2d4ce8d7+23]
+	RtlUserThreadStart [0x0x7fff2e568d9c+44]
+
+2025-10-27 19:54:37.281 | WARNING  | __main__:<module>:82 - No se encontró información en https://bogota.gov.co/mi-ciudad/participacion-y-cultura-ciudadana/asi-funciona-la-plataforma-de-datos-abiertos-bogota-2025
+2025-10-27 19:54:37.282 | INFO     | __main__:<module>:77 - Extrayendo datos de https://bogota.gov.co/mi-ciudad/movilidad/en-vivo-movilidad-bogota-y-rutas-transmilenio-lunes-27-de-octubre-2025
+2025-10-27 19:54:48.962 | ERROR    | __main__:get_details:60 - Error procesando https://bogota.gov.co/mi-ciudad/movilidad/en-vivo-movilidad-bogota-y-rutas-transmilenio-lunes-27-de-octubre-2025: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66ce9e8e5+80021]
+	GetHandleVerifier [0x0x7ff66ce9e940+80112]
+	(No symbol) [0x0x7ff66cc2060f]
+	(No symbol) [0x0x7ff66cc78854]
+	(No symbol) [0x0x7ff66cc78b1c]
+	(No symbol) [0x0x7ff66cccc927]
+	(No symbol) [0x0x7ff66cca126f]
+	(No symbol) [0x0x7ff66ccc968a]
+	(No symbol) [0x0x7ff66cca1003]
+	(No symbol) [0x0x7ff66cc695d1]
+	(No symbol) [0x0x7ff66cc6a3f3]
+	GetHandleVerifier [0x0x7ff66d15dc7d+2960429]
+	GetHandleVerifier [0x0x7ff66d157f3a+2936554]
+	GetHandleVerifier [0x0x7ff66d178977+3070247]
+	GetHandleVerifier [0x0x7ff66ceb83ce+185214]
+	GetHandleVerifier [0x0x7ff66cebfe1f+216527]
+	GetHandleVerifier [0x0x7ff66cea7b24+117460]
+	GetHandleVerifier [0x0x7ff66cea7cdf+117903]
+	GetHandleVerifier [0x0x7ff66ce8dbb8+11112]
+	BaseThreadInitThunk [0x0x7fff2d4ce8d7+23]
+	RtlUserThreadStart [0x0x7fff2e568d9c+44]
+
+2025-10-27 19:54:51.231 | WARNING  | __main__:<module>:82 - No se encontró información en https://bogota.gov.co/mi-ciudad/movilidad/en-vivo-movilidad-bogota-y-rutas-transmilenio-lunes-27-de-octubre-2025
+2025-10-27 19:54:51.232 | INFO     | __main__:<module>:77 - Extrayendo datos de https://bogota.gov.co/internacional/oferta-internacional-en-bogota-de-27-de-octubre-al-1-de-noviembre-2025
+2025-10-27 19:55:02.915 | ERROR    | __main__:get_details:60 - Error procesando https://bogota.gov.co/internacional/oferta-internacional-en-bogota-de-27-de-octubre-al-1-de-noviembre-2025: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66ce9e8e5+80021]
+	GetHandleVerifier [0x0x7ff66ce9e940+80112]
+	(No symbol) [0x0x7ff66cc2060f]
+	(No symbol) [0x0x7ff66cc78854]
+	(No symbol) [0x0x7ff66cc78b1c]
+	(No symbol) [0x0x7ff66cccc927]
+	(No symbol) [0x0x7ff66cca126f]
+	(No symbol) [0x0x7ff66ccc968a]
+	(No symbol) [0x0x7ff66cca1003]
+	(No symbol) [0x0x7ff66cc695d1]
+	(No symbol) [0x0x7ff66cc6a3f3]
+	GetHandleVerifier [0x0x7ff66d15dc7d+2960429]
+	GetHandleVerifier [0x0x7ff66d157f3a+2936554]
+	GetHandleVerifier [0x0x7ff66d178977+3070247]
+	GetHandleVerifier [0x0x7ff66ceb83ce+185214]
+	GetHandleVerifier [0x0x7ff66cebfe1f+216527]
+	GetHandleVerifier [0x0x7ff66cea7b24+117460]
+	GetHandleVerifier [0x0x7ff66cea7cdf+117903]
+	GetHandleVerifier [0x0x7ff66ce8dbb8+11112]
+	BaseThreadInitThunk [0x0x7fff2d4ce8d7+23]
+	RtlUserThreadStart [0x0x7fff2e568d9c+44]
+
+2025-10-27 19:55:05.207 | WARNING  | __main__:<module>:82 - No se encontró información en https://bogota.gov.co/internacional/oferta-internacional-en-bogota-de-27-de-octubre-al-1-de-noviembre-2025
+2025-10-27 19:55:05.207 | WARNING  | __main__:<module>:90 - No se extrajo ningún dato de los enlaces.
